@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/days"
+        android:textSize="40sp"
+
+        android:textColor="#0f0103"
+        android:layout_above="@+id/minutes"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="54dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="00:"
+        android:id="@+id/hours"
+        android:textSize="40sp"
+        android:layout_alignTop="@+id/minutes"
+        android:layout_toLeftOf="@+id/minutes"
+        android:layout_toStartOf="@+id/minutes"
+        android:textColor="#18f3d5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="00:"
+        android:id="@+id/minutes"
+        android:textSize="40sp"
+        android:layout_alignBaseline="@+id/seconds"
+        android:layout_alignBottom="@+id/seconds"
+        android:layout_centerHorizontal="true"
+        android:textColor="#18f3d5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="00"
+        android:id="@+id/seconds"
+        android:textSize="40sp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/minutes"
+        android:layout_toEndOf="@+id/minutes"
+        android:textColor="#18f3d5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Days Left"
+        android:id="@+id/textView3"
+        android:textSize="40sp"
+        android:layout_alignBottom="@+id/days"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:textColor="#b00bbf" />
+
+
+</RelativeLayout>
